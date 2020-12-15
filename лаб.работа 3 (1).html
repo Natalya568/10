@@ -1,0 +1,24 @@
+<html>
+	<head>
+			<script type="text/javascript">
+				function showTransport() {
+					var cat = document.getElementById("category").value;
+					switch (cat) {
+						case "A" : alert("Мотоциклы"); break;
+						case "B" : alert("Легковые автомобили"); break;
+						case "C" : alert("Грузовые автомобили"); break;
+						case "D" : alert("Автобусы"); break;
+						case "E" : alert("Автомобили с прицепом"); break;
+						default : alert("Нет такой категории");
+					}
+				}
+			</script>
+	</head>
+	<body>
+<br>
+		Введите категорию транспортного средства: <input type="text" id="category"/><br>
+<br>
+		<input type="button" onclick="showTransport()"
+		value="Готово"/>
+	</body>
+</html>
